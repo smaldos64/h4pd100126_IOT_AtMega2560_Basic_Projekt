@@ -1,0 +1,8 @@
+{
+    "configurations": [
+        {
+            "reference": "@conf_jtag_debug",
+            "toolSerial": "J42700049626"
+        }
+    ]
+}

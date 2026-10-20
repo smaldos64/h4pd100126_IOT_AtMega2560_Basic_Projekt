@@ -1,0 +1,17 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      // Note: Properties here can override MPLAB project settings
+      "name": "Debug ATmega2560 (Atmel-ICE JTAG)",
+      "type": "mplab-core-da",
+      "request": "launch",
+      "program": "${workspaceFolder}/out/Projekt1/Atmel-ICE-JTAG-Debug.elf",
+      "device": "ATmega2560",
+      "tool": "Atmel-ICE",
+      "interface": "JTAG",
+      "stopOnEntry": true,
+      "preLaunchTask": "Projekt1: Atmel-ICE-JTAG-Debug - Build"
+    }
+  ]
+}

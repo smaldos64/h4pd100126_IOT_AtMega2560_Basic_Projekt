@@ -1,0 +1,31 @@
+{
+    "cmake.sourceDirectory": "C:/Lars/h4pd100126/IOT/MPLab/Projekt12/cmake/Projekt1/default",
+    "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools",
+    // LTPE
+    "C_Cpp.errorSquiggles": "disabled",
+    "mplab.clangd.compileCommandsDir": "${workspaceFolder}\\_build\\Projekt1\\Atmel-ICE-JTAG-Debug",
+    "mplab.clangd.arguments": [
+        "--header-insertion=never"
+    ],
+    "mplab.clangd.path": "c:\\Program Files\\Microchip\\xc8\\v4.00\\bin\\xc8-clangd.exe",
+    "memory-inspector.debugTypes": [
+        "arm-debugger",
+        "embedded-debug",
+        "gdb",
+        "gdbtarget",
+        "mplab-core-da"
+    ],
+    "mplab.ioview.columnWidths": {
+        "Projekt1-Atmel-ICE-JTAG-Debug": [
+            188,
+            61,
+            50,
+            50,
+            50,
+            152
+        ]
+    },
+    "mplab.ioview.taggedNodes": {
+        "Projekt1-Atmel-ICE-JTAG-Debug": []
+    }
+}

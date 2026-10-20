@@ -1,0 +1,80 @@
+{
+    "version": "1.9",
+    "configurations": [
+        {
+            "name": "Atmel-ICE-JTAG-Debug",
+            "id": "conf_jtag_debug",
+            "device": "ATmega2560",
+            "imagePath": "./out/Projekt1/Atmel-ICE-JTAG-Debug.elf",
+            "tool": "Atmel-ICE",
+            "packs": [
+                {
+                    "name": "ATmega_DFP",
+                    "vendor": "Microchip",
+                    "version": "3.6.299"
+                }
+            ],
+            "fileSet": "default",
+            "toolchain": "xc8-debug"
+        },
+        {
+            "name": "Atmel-ICE-ISP-Release",
+            "id": "conf_ice_isp",
+            "device": "ATmega2560",
+            "imagePath": "./out/Projekt1/Atmel-ICE-ISP-Release.elf",
+            "packs": [
+                {
+                    "name": "ATmega_DFP",
+                    "vendor": "Microchip",
+                    "version": "3.6.299"
+                }
+            ],
+            "fileSet": "default",
+            "toolchain": "xc8-release"
+        },
+        {
+            "name": "AVRISP-mkII-Release",
+            "id": "conf_avr_mkii",
+            "device": "ATmega2560",
+            "imagePath": "./out/Projekt1/AVRISP-mkII-Release.elf",
+            "packs": [
+                {
+                    "name": "ATmega_DFP",
+                    "vendor": "Microchip",
+                    "version": "3.6.299"
+                }
+            ],
+            "fileSet": "default",
+            "toolchain": "xc8-release"
+        }
+    ],
+    "propertyGroups": [
+        {
+            "name": "xc8-debug",
+            "type": "toolchain",
+            "provider": "microchip.toolchains:xc8@4.00",
+            "properties": {
+                "general.extra-compiler-switches": "-O0 -g3"
+            }
+        },
+        {
+            "name": "xc8-release",
+            "type": "toolchain",
+            "provider": "microchip.toolchains:xc8@4.00",
+            "properties": {
+                "general.extra-compiler-switches": "-O2"
+            }
+        }
+    ],
+    "fileSets": [
+        {
+            "name": "default",
+            "files": [
+                {
+                    "include": "**/*",
+                    "exclude": "**/@(build|_build|out|cmake|.vscode)/**/*"
+                }
+            ]
+        }
+    ]
+}

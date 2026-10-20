@@ -1,0 +1,21 @@
+{
+    "configurations": [
+        {
+            "name": "XC8 ATmega2560",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "C:/Program Files/Microchip/xc8/v4.00/avr/include",
+                "C:/Users/ltpe/.mchp_packs/Microchip/ATmega_DFP/3.6.299/xc8/avr/include"
+            ],
+            "defines": [
+                "__AVR_ATmega2560__",
+                "_XTAL_FREQ=16000000UL"
+            ],
+            "compilerPath": "C:/Program Files/Microchip/xc8/v4.00/bin/xc8-cc.exe",
+            "cStandard": "c99",
+            "cppStandard": "c++11",
+            "intelliSenseMode": "gcc-x64"
+        }
+    ],
+    "version": 4
+}
